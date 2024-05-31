@@ -1,0 +1,524 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   line-height: 1.6;
+   background-color: #f4f4f4;
+   font-family: "Mulish", sans-serif;
+}
+
+.container {
+   max-width: 1200px;
+   margin: auto;
+   padding: 0 20px;
+   box-sizing: border-box;
+}
+
+
+header {
+   background-color: black;
+   color: #fff;
+   padding: 20px 0;
+   height: 130px;
+}
+
+header a{
+   text-decoration: none;
+   color: white;
+}
+
+header a:hover{
+   color: white;
+}
+
+.logo {
+   position: absolute;
+   top: 15px;
+   left: 20px;
+   width: 100px;
+   height: auto;
+}
+
+header h1 {
+   position: absolute;
+   left: 150px;
+   width: auto;
+}
+
+header nav {
+   position: absolute;
+   right: 0;
+   top: 50px;
+}
+
+header nav ul {
+   list-style: none;
+   text-align: center;
+}
+
+header nav ul li {
+   display: inline-block;
+   margin-right: 20px;
+}
+
+header nav ul .active a{
+   color: rgb(248, 95, 166);
+}
+
+header nav ul .active a:hover{
+   color: rgb(248, 95, 166);
+}
+
+header nav ul .pro a:hover{
+   color: #c2c1c1 !important;
+}
+
+header nav ul li a {
+   color: #fff;
+   font-size: 120%;
+   text-decoration: none !important;
+}
+
+header nav ul li a:hover{
+   color: #c2c1c1;
+}
+section {
+   padding: 50px 0;
+   text-align: center;
+ }
+ 
+#domov_o_meni {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 650px;
+}
+ 
+#domov_o_meni img {
+   flex: 1;
+   width: 50%;
+   height: auto;
+   margin-left: 5px;
+}
+ 
+#domov_o_meni .napis_domov {
+   flex: 1;
+   padding-left: 20px;
+   color: black;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   margin-right: 5px;
+}
+
+#domov_o_meni .napis_domov h2 {
+   font-size: 3em;
+}
+
+#domov_o_meni .napis_domov p {
+   text-align: left;
+   font-size: 1.3em;
+}
+ 
+#domov_o_meni a {
+   margin-top: 20px;
+   padding: 10px 20px;
+   text-decoration: none;
+   background-color: #007bff;
+   color: white;
+   border-radius: 5px;
+   text-align: center;
+   width: 15%;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+footer {
+   background-color: black;
+   color: #fff;
+   padding: 20px 0;
+}
+
+footer h2{
+   text-align: left;
+   font-size: 2em;
+   margin-bottom: 20px;
+}
+
+footer p{
+   font-size: 1.1em;
+}
+
+footer .noga{
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+footer .desno,
+footer .levo{
+   flex: 1;
+}
+
+footer .levo {
+   text-align: left;
+   padding-left: 20px;
+}
+
+footer .desno {
+   text-align: center;
+   font-size: 1em;
+}
+
+footer .container{
+   height: auto;
+}
+footer .desno nav {
+   display: flex;
+   align-items: center;
+   height: 100%;
+}
+
+footer .desno nav ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+}
+
+footer .desno nav ul li {
+   margin-bottom: 10px;
+   margin-left: 70px;
+}
+
+footer nav a{
+   color: #fff;
+   font-size: 1.1em;
+}
+
+footer nav ul li {
+   display: inline-block;
+   margin-right: 20px;
+}
+
+footer nav a:hover{
+   color: #fff;
+   text-decoration: none;
+}
+
+footer .pravice{
+   display: flex;
+   justify-content: center;
+   margin: 0;
+   padding: 0;
+}
+
+
+#programi h1 {
+   text-align: center;
+   margin: 20px 0;
+   color: #333;
+}
+
+#programi table {
+   width: 90%;
+   margin: 20px auto;
+   border-collapse: collapse;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   background-color: #fff;
+}
+
+#programi th, td {
+   padding: 15px;
+   text-align: left;
+   border-bottom: 1px solid #ddd;
+}
+
+#programi th, td:nth-child(1) {
+   color: rgb(253, 113, 227);
+   font-weight: bold;
+}
+
+#programi th {
+   background-color: #dddbdb;
+   color: #333;
+}
+
+#programi tr:hover {
+   background-color: #f1f1f1;
+}
+
+#programi ul {
+   padding-left: 20px;
+   margin: 0;
+}
+
+#programi li {
+   margin-bottom: 5px;
+}
+
+#program .container {
+   width: 80%;
+   margin: 20px auto;
+   padding: 20px;
+   background-color: #fff;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#program h1 {
+   text-align: center;
+   color: #333;
+}
+
+#program h2 {
+   color: #555;
+}
+
+#program p {
+   line-height: 1.6;
+   color: #666;
+}
+
+#program .cena{
+   font-size: 1.5em;
+   font-weight: bold;
+   color: #d9534f;
+}
+
+#program ul {
+   list-style-type: disc;
+   padding-left: 20px;
+}
+
+#program ul li {
+   margin-bottom: 10px;
+   color: #444;
+}
+
+.map-responsive iframe{
+   margin-bottom: 50px;
+   border: 2px solid rgba(109, 94, 95, 0.188);
+}
+
+#domov_galerija .vrtiljak {
+   overflow: hidden;
+   position: relative;
+   width: 100%;
+}
+
+#domov_galerija .slike {
+   display: flex;
+   animation: vrtenje 10s alternate infinite;
+}
+
+#domov_galerija .slike img {
+   width: 100%;
+   border-radius: 5px;
+   box-shadow: 0 0 5px rgba(0, 0, 0, 0.499);
+   margin-left: 10px;
+}
+
+#domov_galerija .gumb {
+   text-align: center;
+   margin-top: 20px;
+}
+
+#domov_galerija a {
+   padding: 10px 20px;
+   text-decoration: none;
+   background-color: #007bff;
+   color: white;
+   border-radius: 5px;
+   text-align: center;
+   display: inline-block;
+}
+
+@keyframes vrtenje {
+   0% { transform: translateX(0); }
+   100% { transform: translateX(-169%); }
+}
+
+.galerija {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   gap: 10px;
+   margin: 20px 20px;
+}
+
+.galerija .slika {
+   width: 100%;
+   border-radius: 5px;
+   overflow: hidden;
+}
+
+.galerija .slika img {
+   width: 100%;
+   height: auto;
+   transition: transform 0.3s ease;
+}
+
+.galerija .slika:hover img {
+   transform: scale(1.1);
+}
+
+#domov_programi .row {
+   display: flex;
+   flex-wrap: wrap;
+   margin-left: -1%;
+   margin-right: -1%;
+   width: 100%;
+}
+
+#domov_programi .col-lg-2 {
+   border: 2px solid rgba(109, 94, 95, 0.188);
+   margin: 1%;
+   width: calc(16.5% - 2px);
+   box-sizing: border-box;
+   overflow: hidden;
+}
+
+#domov_programi .col-lg-2 p {
+   width: 100%;
+   word-wrap: break-word;
+}
+
+#domov_programi .col-lg-2:nth-child(1) {
+   margin-left: 5%;
+}
+
+#domov_programi .col-lg-2:nth-child(5) {
+   margin-right: 5%;
+}
+
+#domov_programi .gumb {
+   text-align: center;
+   margin-top: 20px;
+}
+
+#domov_programi a{
+   color: black;
+   text-decoration: none;
+}
+
+#domov_programi .link{
+   padding: 10px 20px;
+   text-decoration: none;
+   background-color: #007bff;
+   color: white;
+   border-radius: 5px;
+   text-align: center;
+   display: inline-block;
+}
+
+#domov_lokacije {
+   padding: 40px 20px;
+   text-align: left;
+}
+
+#domov_lokacije .container {
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+#domov_lokacije h2 {
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+#domov_lokacije p {
+   font-size: 1.3em;
+   margin-bottom: 20px;
+   line-height: 1.6;
+}
+
+#domov_lokacije .gumb {
+   text-align: center;
+   margin-top: 20px;
+}
+
+#domov_lokacije a {
+   padding: 10px 20px;
+   text-decoration: none;
+   background-color: #007bff;
+   color: white;
+   border-radius: 5px;
+   text-align: center;
+   display: inline-block;
+}
+
+#o_meni p{
+   font-size: 1.3em;
+}
+
+#politika_zasebnosti section{
+   text-align: left;
+   padding: 10px;
+}
+#o_meni img{
+   display: block;
+   margin: 0 auto;
+   margin-top: 30px;
+   margin-bottom: 30px;
+}
+
+#politika_zasebnosti h1{
+   text-align: center;
+   font-size: 2.5em;
+}
+
+#politika_zasebnosti h2{
+   text-align: left;
+}
+
+#politika_zasebnosti {
+   padding: 50px 0;
+}
+#politika_zasebnosti .container {
+   background-color: white;
+   padding: 20px;
+   border-radius: 5px;
+   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+#politika_zasebnosti h1 {
+   font-family: 'Mulish', sans-serif;
+   font-weight: 700;
+   color: #343a40;
+   margin-top: 0;
+   margin-bottom: 20px;
+}
+#politika_zasebnosti section {
+   margin-bottom: 30px;
+}
+#politika_zasebnosti h2 {
+   font-family: 'Mulish', sans-serif;
+   font-weight: 700;
+   color: #343a40;
+   margin-top: 0;
+   margin-bottom: 10px;
+}
+#politika_zasebnosti h3 {
+   font-family: 'Mulish', sans-serif;
+   font-weight: 700;
+   color: #343a40;
+   margin-top: 0;
+   margin-bottom: 10px;
+}
+#politika_zasebnosti h4 {
+   font-family: 'Mulish', sans-serif;
+   font-weight: 700;
+   color: #343a40;
+   margin-top: 0;
+   margin-bottom: 5px;
+}
+#politika_zasebnosti p, #politika_zasebnosti ol, #politika_zasebnosti ul {
+   font-family: 'DM Sans', sans-serif;
+   font-size: 16px;
+   color: #343a40;
+   line-height: 1.6;
+}
+#politika_zasebnosti ol, #politika_zasebnosti ul {
+   padding-left: 20px;
+}
