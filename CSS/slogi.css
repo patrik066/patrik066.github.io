@@ -238,8 +238,8 @@ footer .pravice{
 }
 
 #programi th, td:nth-child(1) {
-   color: rgb(253, 113, 227);
    font-weight: bold;
+   text-transform: uppercase;
 }
 
 #programi th {
@@ -457,6 +457,7 @@ footer .pravice{
    text-align: left;
    padding: 10px;
 }
+
 #o_meni img{
    display: block;
    margin: 0 auto;
@@ -476,12 +477,14 @@ footer .pravice{
 #politika_zasebnosti {
    padding: 50px 0;
 }
+
 #politika_zasebnosti .container {
    background-color: white;
    padding: 20px;
    border-radius: 5px;
    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
+
 #politika_zasebnosti h1 {
    font-family: 'Mulish', sans-serif;
    font-weight: 700;
@@ -489,9 +492,11 @@ footer .pravice{
    margin-top: 0;
    margin-bottom: 20px;
 }
+
 #politika_zasebnosti section {
    margin-bottom: 30px;
 }
+
 #politika_zasebnosti h2 {
    font-family: 'Mulish', sans-serif;
    font-weight: 700;
@@ -499,6 +504,7 @@ footer .pravice{
    margin-top: 0;
    margin-bottom: 10px;
 }
+
 #politika_zasebnosti h3 {
    font-family: 'Mulish', sans-serif;
    font-weight: 700;
@@ -506,6 +512,7 @@ footer .pravice{
    margin-top: 0;
    margin-bottom: 10px;
 }
+
 #politika_zasebnosti h4 {
    font-family: 'Mulish', sans-serif;
    font-weight: 700;
@@ -513,12 +520,31 @@ footer .pravice{
    margin-top: 0;
    margin-bottom: 5px;
 }
+
 #politika_zasebnosti p, #politika_zasebnosti ol, #politika_zasebnosti ul {
    font-family: 'DM Sans', sans-serif;
    font-size: 16px;
    color: #343a40;
    line-height: 1.6;
 }
+
 #politika_zasebnosti ol, #politika_zasebnosti ul {
    padding-left: 20px;
+}
+
+#lokacije{
+   margin-top: 20px;
+   margin-bottom: 80px;
+}
+
+#lokacije h3{
+   display: inline-block;
+}
+
+#lokacije a{
+   color: black;
+}
+
+#lokacije p{
+   font-size: 1.3em;
 }
