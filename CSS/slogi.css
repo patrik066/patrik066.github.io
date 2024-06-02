@@ -17,6 +17,7 @@ body {
    box-sizing: border-box;
 }
 
+/* Glava */
 
 header {
    background-color: black;
@@ -85,6 +86,9 @@ header nav ul li a {
 header nav ul li a:hover{
    color: #c2c1c1;
 }
+
+/* Začetna stran o meni */
+
 section {
    padding: 50px 0;
    text-align: center;
@@ -136,6 +140,8 @@ section {
    margin-left: auto;
    margin-right: auto;
 }
+
+/* Noga */
 
 footer {
    background-color: black;
@@ -216,6 +222,7 @@ footer .pravice{
    padding: 0;
 }
 
+/* Podstran programi */
 
 #programi h1 {
    text-align: center;
@@ -260,6 +267,8 @@ footer .pravice{
    margin-bottom: 5px;
 }
 
+/* Podstrani programi */
+
 #program .container {
    width: 80%;
    margin: 20px auto;
@@ -298,10 +307,7 @@ footer .pravice{
    color: #444;
 }
 
-.map-responsive iframe{
-   margin-bottom: 50px;
-   border: 2px solid rgba(109, 94, 95, 0.188);
-}
+/* Začetna stran Slike */
 
 #domov_galerija .vrtiljak {
    overflow: hidden;
@@ -341,6 +347,8 @@ footer .pravice{
    100% { transform: translateX(-169%); }
 }
 
+/* Podstran galerija */
+
 .galerija {
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -363,6 +371,8 @@ footer .pravice{
 .galerija .slika:hover img {
    transform: scale(1.1);
 }
+
+/* Začetna stran programi */
 
 #domov_programi .row {
    display: flex;
@@ -413,6 +423,8 @@ footer .pravice{
    display: inline-block;
 }
 
+/* Začetna stran lokacije */
+
 #domov_lokacije {
    padding: 40px 20px;
    text-align: left;
@@ -449,13 +461,10 @@ footer .pravice{
    display: inline-block;
 }
 
+/* Podstran o meni */
+
 #o_meni p{
    font-size: 1.3em;
-}
-
-#politika_zasebnosti section{
-   text-align: left;
-   padding: 10px;
 }
 
 #o_meni img{
@@ -463,6 +472,13 @@ footer .pravice{
    margin: 0 auto;
    margin-top: 30px;
    margin-bottom: 30px;
+}
+
+/* Podstran politika zasebnosti */
+
+#politika_zasebnosti section{
+   text-align: left;
+   padding: 10px;
 }
 
 #politika_zasebnosti h1{
@@ -530,6 +546,13 @@ footer .pravice{
 
 #politika_zasebnosti ol, #politika_zasebnosti ul {
    padding-left: 20px;
+}
+
+/* Podstran lokacije */
+
+.map-responsive iframe{
+   margin-bottom: 50px;
+   border: 2px solid rgba(109, 94, 95, 0.188);
 }
 
 #lokacije{
