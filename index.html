@@ -111,14 +111,16 @@
         <div class="container">
             <h2>Slike</h2>
             <div class="vrtiljak">
-                    <div class="slike">
-                        <img src="Slike/home/Galerija/_DSC8413.jpg" alt="Slika 1">
-                        <img src="Slike/home/Galerija/_DSC8415.jpg" alt="Slika 2">
-                        <img src="Slike/home/Galerija/_DSC8417.jpg" alt="Slika 3">
-                    </div>
-                <div class="gumb">
-                    <a href="galerija.html">Več slik...</a>
+                <div class="slike">
+                    <img src="Slike/home/Galerija/_DSC8413.jpg" alt="Slika 1">
+                    <img src="Slike/home/Galerija/_DSC8415.jpg" alt="Slika 2">
+                    <img src="Slike/home/Galerija/_DSC8417.jpg" alt="Slika 3">
                 </div>
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+            <div class="gumb">
+                <a href="galerija.html">Več slik...</a>
             </div>
         </div>
     </section>
@@ -151,5 +153,48 @@
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const slike = document.querySelector('#domov_galerija .slike');
+            const imgs = document.querySelectorAll('#domov_galerija .slike img');
+            const prevButton = document.querySelector('#domov_galerija .prev');
+            const nextButton = document.querySelector('#domov_galerija .next');
+
+            let index = 0;
+            const imgCount = imgs.length;
+            const imgWidth = imgs[0].clientWidth + 20; // including margin
+
+            function showImage(index) {
+                slike.style.transform = `translateX(${-index * imgWidth}px)`;
+            }
+
+            prevButton.addEventListener('click', function () {
+                index = (index > 0) ? index - 1 : imgCount - 1;
+                showImage(index);
+            });
+
+            nextButton.addEventListener('click', function () {
+                index = (index < imgCount - 1) ? index + 1 : 0;
+                showImage(index);
+            });
+
+            function autoSlide() {
+                index = (index < imgCount - 1) ? index + 1 : 0;
+                showImage(index);
+            }
+
+            let slideInterval = setInterval(autoSlide, 3000);
+
+            // Stop auto sliding on hover
+            slike.addEventListener('mouseenter', function () {
+                clearInterval(slideInterval);
+            });
+
+            // Resume auto sliding when not hovering
+            slike.addEventListener('mouseleave', function () {
+                slideInterval = setInterval(autoSlide, 3000);
+            });
+        });
+    </script>
 </body>
 </html>

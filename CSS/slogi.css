@@ -313,18 +313,41 @@ footer .pravice{
    overflow: hidden;
    position: relative;
    width: 100%;
+   max-width: 800px;
+   margin: auto;
 }
 
 #domov_galerija .slike {
    display: flex;
-   animation: vrtenje 10s alternate infinite;
+   transition: transform 0.5s ease-in-out;
 }
 
 #domov_galerija .slike img {
    width: 100%;
+   max-width: 800px;
    border-radius: 5px;
-   box-shadow: 0 0 5px rgba(0, 0, 0, 0.499);
-   margin-left: 10px;
+   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+   margin: 0 10px;
+}
+
+#domov_galerija .prev, #domov_galerija .next {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   background-color: rgba(0, 0, 0, 0.5);
+   color: white;
+   border: none;
+   padding: 10px;
+   cursor: pointer;
+   z-index: 1;
+}
+
+#domov_galerija .prev {
+   left: 10px;
+}
+
+#domov_galerija .next {
+   right: 10px;
 }
 
 #domov_galerija .gumb {
@@ -340,11 +363,6 @@ footer .pravice{
    border-radius: 5px;
    text-align: center;
    display: inline-block;
-}
-
-@keyframes vrtenje {
-   0% { transform: translateX(0); }
-   100% { transform: translateX(-169%); }
 }
 
 /* Podstran galerija */
