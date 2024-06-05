@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="sl">
 	<head>
-		<title>Eva Pivk</title>
+		<title>Domov</title>
 		<meta charset="utf-8">
 		<meta name="keywords" content="Osebno Trenerstvo, Fitnes, Eva Pivk">
 		<meta name="description" content="Spletna stran osebe trenerke Eve Pivk.">
@@ -162,7 +162,9 @@
 
             let index = 0;
             const imgCount = imgs.length;
-            const imgWidth = imgs[0].clientWidth + 20; // including margin
+            const imgWidth = imgs[0].clientWidth +
+                parseInt(window.getComputedStyle(imgs[0]).marginLeft) +
+                parseInt(window.getComputedStyle(imgs[0]).marginRight);
 
             function showImage(index) {
                 slike.style.transform = `translateX(${-index * imgWidth}px)`;
