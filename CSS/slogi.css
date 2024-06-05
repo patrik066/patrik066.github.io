@@ -98,12 +98,18 @@ section {
    display: flex;
    align-items: center;
    justify-content: center;
-   height: 650px;
+   margin-left: 20px;
+   margin-right: 20px;
+   height: auto;
+   overflow: hidden;
 }
  
 #domov_o_meni img {
    flex: 1;
-   width: 50%;
+   width: 100%;
+   max-width: 100%;
+   max-height: 100%;
+   /*object-fit: cover;*/
    height: auto;
    margin-left: 5px;
 }
@@ -403,9 +409,11 @@ footer .pravice{
    flex-basis: 200px;
    box-sizing: border-box;
    border: 2px solid rgba(109, 94, 95, 0.188);
+   box-shadow: 10px 10px 5px lightblue;
    margin-right: 20px;
    margin-left: 20px;
    padding: 10px;
+   margin-bottom: 30px;
 }
 
 #domov_programi p {
