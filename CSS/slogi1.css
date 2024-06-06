@@ -32,7 +32,8 @@ header a{
 }
 
 header a:hover,
-header a:active{
+header a:active,
+header a:visited{
    color: white;
 }
 
