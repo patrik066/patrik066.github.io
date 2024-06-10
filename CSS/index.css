@@ -156,10 +156,10 @@
 #domov_o_meni img {
    flex: 1;
    flex-shrink: 200px;
+   height: auto;
    width: 100%;
    max-width: 100%;
    max-height: 100%;
-   height: auto;
    margin-left: 5px;
 }
  
