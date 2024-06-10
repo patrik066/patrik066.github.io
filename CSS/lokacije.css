@@ -1,0 +1,21 @@
+.map-responsive iframe{
+    margin-bottom: 50px;
+    border: 2px solid rgba(109, 94, 95, 0.188);
+ }
+ 
+ #lokacije{
+    margin-top: 20px;
+    margin-bottom: 80px;
+ }
+ 
+ #lokacije h3{
+    display: inline-block;
+ }
+ 
+ #lokacije a{
+    color: black;
+ }
+ 
+ #lokacije p{
+    font-size: 1.3em;
+ }

@@ -1,0 +1,10 @@
+#o_meni p{
+    font-size: 1.3em;
+ }
+ 
+ #o_meni img{
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+ }
