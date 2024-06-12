@@ -197,7 +197,7 @@
    margin-right: auto;
 }
 
-/* menu (NAV) DODANO*/
+/* menu (NAV) DODANO IZ YT */
 
 * {
    margin: 0;
@@ -209,21 +209,20 @@ body {
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
 nav {
-   background-color: white;
    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
-}
+   right: 0;
+   top: 50px;
+} 
 
 nav ul  {
    width: 100%;
    list-style: none;
    display: flex;
-   justify-content: flex-end;
+   justify-content: end;
    align-items: center;
-}
-
-nav li {
-   height: 50px;
+   text-align: center;
 }
 
 nav a {
@@ -239,6 +238,7 @@ nav li:first-child {
    margin-right: auto;
 }
 
+/*PUSTI*/
 .sidebar {
    position: fixed;
    top: 0;
@@ -252,7 +252,7 @@ nav li:first-child {
    flex-direction: column;
    align-items: flex-start;
    justify-content: flex-start;
-   backdrop-filter: blur(10px);
+   backdrop-filter: blur(30px);
 }
 
 .sidebar li {
@@ -266,6 +266,79 @@ nav li:first-child {
 .menu-button{
    display: none;
 }
+/*DO SEM PUSTI*/
+/* GLAVA DODANO IZ STYLES.CSS*/
+header {
+   background-color: black;
+   color: #fff;
+   padding: 20px 0;
+   height: 130px;
+}
+
+header a{
+   text-decoration: none;
+   color: white;
+} 
+
+header a:hover{
+   color: white;
+}
+
+.logo {
+   position: absolute;
+   top: 15px;
+   left: 20px;
+   width: 100px;
+   height: auto;
+}
+
+header h1 {
+   position: absolute;
+   left: 150px;
+   width: auto;
+}
+
+/*
+header nav {
+   position: absolute;
+   right: 0;
+   top: 50px;
+}  
+
+header nav ul {
+   list-style: none;
+   text-align: center;
+} */
+
+header nav ul li {
+   display: inline-block;
+   margin-right: 20px;
+}
+
+header nav ul .active a,
+header nav ul a:active{
+   color: rgb(248, 95, 166);
+}
+
+header nav ul .active a:hover{
+   color: rgb(248, 95, 166);
+}
+
+header nav ul li a {
+   color: #fff;
+   font-size: 120%;
+   text-decoration: none !important;
+}
+
+header nav ul li a:hover{
+   color: #c2c1c1;
+}
+
+section {
+   padding: 50px 0;
+   text-align: center;
+ }
+/* DO SEM */
 
 @media(max-width: 800px) {
    .hideOnMobile {
