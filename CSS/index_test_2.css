@@ -197,7 +197,7 @@
    margin-right: auto;
 }
 
-/* menu (NAV) DODANO IZ YT */
+/* menu (NAV) DODANO IZ YT
 
 * {
    margin: 0;
@@ -236,7 +236,7 @@ nav a {
 
 nav li:first-child {
    margin-right: auto;
-}
+} */
 
 .sidebar {
    position: fixed;
@@ -266,7 +266,26 @@ nav li:first-child {
    display: none;
 }
 
-/* GLAVA DODANO IZ STYLES.CSS*/
+/* GLAVA DODANO IZ SLOGI.CSS*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    font-family: "Mulish", sans-serif;
+}
+ 
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
 header {
    background-color: black;
    color: #fff;
@@ -299,12 +318,21 @@ header h1 {
 
 header nav {
    position: absolute;
+   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
    right: 0;
    top: 50px;
+   width: 100%;
+   height: auto;
 }  
 
 header nav ul {
    list-style: none;
+   text-align: center;
+   width: 100%;
+   list-style: none;
+   display: flex;
+   justify-content: end;
+   align-items: center;
    text-align: center;
 }
 
@@ -336,6 +364,8 @@ section {
    padding: 50px 0;
    text-align: center;
  }
+
+
 
 @media(max-width: 800px) {
    .hideOnMobile {
