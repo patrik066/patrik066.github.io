@@ -201,6 +201,10 @@ footer .pravice{
    display: none;
 }
 
+.close {
+   fill: black;
+}
+
 @media(max-width: 800px) {
    .hideOnMobile {
       display: none;
