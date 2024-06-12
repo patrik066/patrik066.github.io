@@ -182,7 +182,7 @@ footer .pravice{
    flex-direction: column;
    align-items: flex-start;
    justify-content: flex-start;
-   backdrop-filter: blur(30px);
+   backdrop-filter: blur(90px);
 }
 
 .sidebar li {
