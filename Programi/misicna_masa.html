@@ -21,22 +21,32 @@
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	</head>
 <body>
+
     <header>
         <div class="container">
-            <a href="../index.html">
-                <img src="../slike/logo/logo.jpg" alt="Fitness Personal Training Logo" class="logo">
-            </a>
-            <a href="../index.html">
-                <h1>Osebno trenerstvo Pivk</h1>
+            <a href="index.html">
+                <img src="../Slike/logo/logo.jpg" alt="Fitnes Personal Training Logo"  class="logo"></a>
+            <a href="index.html">
+                <h1>OSEBNO TRENERSTVO PIVK</h1>
             </a>
             <nav>
                 <ul>
-                    <li><a href="../index.html">Domov</a></li>
-                    <li class="active pro"><a href="../programi.html">Programi</a></li>
-                    <li><a href="../kontakt.html">Kontakt</a></li>
-                    <li><a href="../omeni.html">O meni</a></li>
-                    <li><a href="../lokacije.html">Lokacije</a></li>
-                    <li><a href="../galerija.html">Galerija</a></li>
+                    <li class="hideOnMobile"><a href="index.html">Domov</a></li>
+                    <li class="active hideOnMobile"><a href="paketi.html">Paketi</a></li>
+                    <li class="hideOnMobile"><a href="kontakt.html">Kontakt</a></li>
+                    <li class="hideOnMobile"><a href="omeni.html">O meni</a></li>
+                    <li class="hideOnMobile"><a href="lokacije.html">Lokacije</a></li>
+                    <li class="hideOnMobile"><a href="galerija.html">Galerija</a></li>
+                    <li class="menu-button" onclick=showSideBar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                </ul>
+                <ul class="sidebar">
+                    <li onclick="hideSideBar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li class="active"><a href="index.html">Domov</a></li>
+                    <li><a href="paketi.html">Paketi</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><a href="omeni.html">O meni</a></li>
+                    <li><a href="lokacije.html">Lokacije</a></li>
+                    <li><a href="galerija.html">Galerija</a></li>
                 </ul>
             </nav>
         </div>
@@ -100,5 +110,15 @@
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function showSideBar() {
+        const sidebar = document.querySelector(".sidebar")
+        sidebar.style.display = "flex"
+        }
+        function hideSideBar() {
+            const sidebar = document.querySelector(".sidebar")
+            sidebar.style.display = "none"
+        }
+    </script>
 </body>
 </html>
