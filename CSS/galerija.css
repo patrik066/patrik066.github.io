@@ -1,3 +1,4 @@
+
 .galerija {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -20,3 +21,18 @@
  .galerija .slika:hover img {
     transform: scale(1.1);
  }
+
+ 
+/*DODANO*/
+/*.galerija {
+   display: flex;
+   flex-wrap: wrap;
+}
+.slika {
+   margin: 10px;
+}
+.slika img {
+   max-width: 100%;
+   height: auto;
+   display: block;
+}*/
