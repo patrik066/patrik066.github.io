@@ -20,3 +20,4 @@ navLinks.forEach(link => {
     link.parentElement.classList.add('active');
     }
 });
+/*MANJKA ZA AKTIVNO STRAN DA JE NAPIS ROZA */
