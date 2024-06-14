@@ -1,21 +1,75 @@
 .map-responsive iframe{
-    margin-bottom: 50px;
-    border: 2px solid rgba(109, 94, 95, 0.188);
+   margin-bottom: 50px;
+   border: 2px solid rgba(109, 94, 95, 0.188);
  }
  
- #lokacije{
-    margin-top: 20px;
-    margin-bottom: 80px;
+#lokacije{
+   margin-top: 20px;
+   margin-bottom: 80px;
  }
  
- #lokacije h3{
-    display: inline-block;
+#lokacije h3{
+   font-size: 1.8em;
+   display: inline-block;
  }
  
- #lokacije a{
-    color: black;
+#lokacije a{
+   width: 100%;
+   color: black;
+   
  }
  
+#lokacije .card p{
+   padding: 20px 0;
+}
+
  #lokacije p{
     font-size: 1.3em;
  }
+
+
+ #lokacije .wraper{
+   width: 90%;
+   height: 100%;
+   margin-inline: auto;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+   gap: 50px;
+   margin-top: 50px;
+   margin-bottom: 20px;
+}
+
+#lokacije img{
+   max-width: 100%;
+   display: block;
+}
+
+#lokacije .card {
+   background-color: rgba(255, 255, 255, 255, 0.3);
+   border-radius: 15px;
+   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+   overflow: hidden;
+   padding: 50px;
+   margin-bottom: 50px;
+   color: #fff;
+   font-size: 1.2em;
+   position: relative;
+   width: 100%;
+   transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+#lokacije .card h2{
+   color: black;
+   margin: 0 0 10px;
+   font-size: 2em;
+}
+
+#lokacije .card h3{
+   color: black;
+}
+
+#lokacije .card p {
+   color: black;
+   margin: 0;
+   font-size: 1.3em;
+}

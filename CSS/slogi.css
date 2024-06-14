@@ -8,6 +8,7 @@ body {
    line-height: 1.6;
    background-color: #f4f4f4;
    font-family: "Mulish", sans-serif;
+   min-height: 100vh;
 }
 
 .container {
@@ -236,7 +237,7 @@ body.no-scroll {
 }
 
 /*--------------------------------------- M E D I A ------------------------------------------------*/
-@media(max-width: 800px) {
+@media(max-width: 1144px) {
    .hideOnMobile {
       display: none;
    }
@@ -248,5 +249,15 @@ body.no-scroll {
 @media(max-width: 400px) {
    .sidebar {
       width: 100%;
+   }
+}
+@media (max-width: 700px) {
+   header h1 {
+      font-size: 30px;
+   }
+}
+@media (max-width: 640px) {
+   header h1 {
+      font-size: 25px;
    }
 }
