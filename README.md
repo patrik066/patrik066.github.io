@@ -31,6 +31,7 @@ https://blackbox-center.si/osebno-trenerstvo/
 
 Kasneje se doda tudi partnerstva: Fitnes PowerHouse, Spletne strani Gasperlin. Kasneje Daša ali Nika.
 
+
 LOKACIJE:
 slika fitnesa in notranjosti
 url do fitnesa
